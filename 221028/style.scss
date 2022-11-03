@@ -38,7 +38,7 @@ $colorMain: #e4010b;
     font {
         font-family: 'SpoqaHanSansNeo', sans-serif;
         weight: 300px;
-        size:14px;
+        size:14px; 
     }  color:$colorwhite;
     }
 
@@ -145,7 +145,7 @@ body {
 
                 margin: 0 20px 40px 0;
             }
-            .txt_box { // 아티클 컨텐츠 (611) - 304 - 20 =287 
+            .txt_box { // 아티클 컨텐츠 (611) - 304 - 20 (figure의 right 마진) = 287 
                 width: 287px;
                 float:left;
 

@@ -3,12 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>about</title>
+    <title>헤더</title>
     <link rel="stylesheet" href="../common/minireset.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
         
-    .clearfix::after {
+
+.clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+	margin: 10px auto;
+	padding:0;
+	color:#222222;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.container {
+	width:100%;
+	margin:0 auto;
+}
+
+header {
+	width:100%;
+	height:80px;
+    margin-left: 131px;
+    margin-top: 28px;
+	align-items: center;
+}
+
+header h2 {
+    float:left;
+}
+
+.login {
+    float: left;
+    padding: 0 15px;
+
+}
+.login button {
+    font-size: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 20px;
+    padding: 5px 8px;
+    position: relative;
+    top:-3px;
+}
+
+ul {
+    padding:0;
+    margin-left: 617px;
+    margin-right: 152px;
+}
+
+ul li {
+    float:left;
+}
+
+nav {
+    font-size: 20px;
+    margin: 15px auto;
+    width: 1800px;
+    height: 80px;
+    margin:0 auto;
+}
+nav #gnb::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+nav #gnb a {
+    display: block;
+    color:#222222;
+    padding: 0 20px;
+}
+
+nav #gnb img {
+    margin: 0px;
+}
+
+.clearfix::after {
         content: "";
         display: block;
         clear: both;
@@ -66,7 +151,9 @@
             background-position: 50% 50%;
         }
 
+
         /*            중        간              */
+
 
         .main {
             width: 1240px;
@@ -141,7 +228,6 @@
             /* padding : 80px 321px; */
             padding: 80px 0;
             max-width: 1940px;
-            min-width: 1240px;
     
         }
 
@@ -175,27 +261,15 @@
             text-align: left;
             display: block;
             width: 1240px;
-            margin-bottom: 40px;
-            /* padding: 160px 321px 40px; */
+            padding: 160px 321px 40px;
         }
-
-        .info {
-            height: 400px;
-            margin: 0 auto;
-            /* margin-top: 160px; */
-            /* padding : 80px 321px; */
-            padding: 60px 0;
-            max-width: 1240px;
-            min-width: 1240px;
-        }
-
         .info ul {
             font-size: 20px;
             font-style: 'Roboto', '맑은 고딕', '나눔고딕', sans-serif;
             color:#666666;
             display: block;
             float: left;
-            /* padding-left: 315px; */
+            padding-left: 315px;
             margin-bottom: 100px;
         }
 
@@ -211,35 +285,40 @@
         }
 
         .list2{
-           position: relative;
-           left : 20px;
+            text-indent: 18px;
         } 
         
         .list3 {
-            position: relative;
-            left : 75px;
+            text-indent: 30px;
         }
 
         .list4 {
-            position: relative;
-            left: 115px;
             text-align: left;
             line-height: 0.8;
         }
-
-        .list7 {
-            position: relative;
-            left: 25px;
-        }
-
-        .list8 {
-            position: relative;
-            left:70px;
-        }
-
-    </style>
-</head>
+</style>
 <body>
+    <div class="container clearfix">
+        <header>
+            <h2><a href="#"><img src="./images/logo.png"></a></h2>
+            <div class="login">
+                <button type="submit">로그인</button>
+                <button type="submit">ID관리</button>
+            </div>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="">트레이딩</a></li>
+                    <li><a href="">상품소개</a></li>
+                    <li><a href="">리서치</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">소비자보호포털</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li class="ham"><a href="#"><img src="./images/ham.png"></a>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <div class="container clearfix">
         <h1>회사소개</h1>
         <div class="title_photo" alt="가장 상단의 남성 손"></div>
