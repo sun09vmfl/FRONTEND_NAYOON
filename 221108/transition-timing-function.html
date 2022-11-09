@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>트랜지션 타이밍 펑션</title>
+    <style> 
+
+        .container {
+            list-style: none;
+            margin: 0; padding: 0;
+            border: 6px solid #000;
+            width: 80vw; cursor:pointer;
+            
+            height: 70vh;
+            display: flex;}
+
+        .container li {
+            width: calc(20% - 5px); height: 40px; line-height: 40px; font-weight: bold;
+            margin: 5px; background-color:yellow;
+            /* font-size: 0; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>transition-timing-function : 움직임 속도 제어</h1>
+    <ul class="container">
+        <li>liner</li>
+        <li>ease</li>
+        <li>ease-in</li>
+        <li>ease-out</li>
+        <li>ease-in-out</li>
+        <li>cubic-bezier()</li>
+    </ul>
+</body>
+</html>
