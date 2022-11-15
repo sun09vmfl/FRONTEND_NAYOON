@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>미디어쿼리예제3</title>
+    <style>
+         body {margin: 0; text-align: center; font-weight: bold; font-size: 2em;}
+         .container {margin: 0; padding: 0; background-color: #17706e; display: flex; flex-wrap: wrap;}
+         .container li {background-color: #d2e603; margin: 1%; list-style: none;}
+         .container .none {display: none;}
+        
+         @media (min-width:768px) {
+            /* 3열 */
+            .container li {width: 31.33333%;}
+            .container li:last-child {display: none;}
+         }
+
+         @media (min-width:1200px) {
+            /* 4열 */
+            .container li {width: 23%;}
+            .container li:last-child {display:block; background-color: #00b321;}
+         }
+         
+         @media (min-width:1400px) {
+            /* 5열 */
+            .container {width: 90%; }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>txt1</li>
+            <li>txt2</li>
+            <li>txt3</li>
+            <li class="none">txt4</li>
+            <li>txt5</li>
+            <li>txt6</li>
+            <li>txt7</li>
+            <li>txt8</li>
+            <li>txt9</li>
+            <li>txt10</li>
+        </ul>
+    </div>
+</body>
+</html>
